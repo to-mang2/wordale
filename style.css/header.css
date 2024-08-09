@@ -1,0 +1,28 @@
+.head-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 10px 0;
+  border-bottom: 1px solid #d3d6da;
+  padding-bottom: 10px;
+}
+
+.head-bar__menu img {
+  height: 30px;
+}
+
+.head-bar__text {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.head-bar__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-bar__icons img {
+  height: 30px;
+  margin-right: 6px;
+}
