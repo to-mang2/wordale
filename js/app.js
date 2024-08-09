@@ -1,4 +1,4 @@
-const 정답 = "APPLE";
+const 정답 = "HONEY";
 
 let index = 0;
 let attempts = 0;
@@ -131,19 +131,19 @@ function appStart() {
   window.addEventListener("keydown", handleKeyDown);
 }
 
-document.getElementById("keyboard-cont").addEventListener("click", (e) => {
-  const target = e.target;
+// document.getElementById("keyboard-cont").addEventListener("click", (e) => {
+//   const target = e.target;
 
-  if (!target.classList.contains("keyboard-block")) {
-    return;
-  }
-  let key = target.textContent;
+//   if (!target.classList.contains("keyboard-block")) {
+//     return;
+//   }
+//   let key = target.textContent;
 
-  if (key === "<img src='delete.svg'>") {
-    key = "Backspace";
-  }
+//   if (key === "<img src='delete.svg'>") {
+//     key = "Backspace";
+//   }
 
-  document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
-});
+//   document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
+// }); 이거 해결해야 함
 
 appStart();
